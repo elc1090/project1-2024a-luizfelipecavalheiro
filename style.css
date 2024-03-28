@@ -31,17 +31,17 @@ header {
 .header-content h1 {
     margin-top: 5%;
     margin-bottom: 0%;
-    margin-left: calc(20vh + 5vh);
+    margin-left: calc(20% + 5%);
 }
 
 .header-content h3 {
     margin-top: 0;
-    margin-left: calc(20vh + 5vh);
+    margin-left: calc(20% + 5%);
 }
 
 header img {
-    margin-left: 15vh;
-    width: 10vh;
+    margin-left: 15%;
+    width: 25%;
 }
 
 
