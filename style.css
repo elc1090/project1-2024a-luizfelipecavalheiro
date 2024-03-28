@@ -1,0 +1,221 @@
+/* Estilo para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    position: relative;
+    background-color: #20107af1;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    justify-content:first baseline;
+    align-items: left;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.header-content h1 {
+    margin-top: 5%;
+    margin-bottom: 0%;
+    margin-left: calc(20vh + 5vh);
+}
+
+.header-content h3 {
+    margin-top: 0;
+    margin-left: calc(20vh + 5vh);
+}
+
+header img {
+    margin-left: 15vh;
+    width: 10vh;
+}
+
+
+.header-content a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo para as seções */
+section {
+    width: 94%;
+    opacity: 0.8;
+    padding: 1%;
+    margin: 2%;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* TODAS AS DIVS DAS AREAS DE EMPRESAS */
+.carrossel {
+    max-width: 94%; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    position: relative;
+}
+
+.carrossel img {
+    max-width: 300px; /* Define o tamanho máximo */
+    height: auto;
+    margin: 2%;
+}
+
+.carrossel h2 {
+    margin: 2%;
+    color:#262;
+}
+
+.default {
+    max-width: 94%; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    position: relative;
+}
+
+.default img {
+    max-width: 20%; /* Define o tamanho máximo */
+    height: auto;
+    margin: 2%;
+    display: block;
+}
+
+.default h2 {
+    margin: 2%;
+    color:#262;
+}
+
+/* SLIDES E TRANSICOES, BOTOES*/
+.slide-container {
+    overflow: hidden;
+}
+
+.slides {
+    display: flex; /* Alterado para flex */
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    flex: 0 0 auto; /* Impede que as imagens sejam redimensionadas */
+    height: 100px; /* Ajuste conforme necessário */
+    margin-right: 10px; /* Espaçamento entre as imagens */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #20107af1;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+.slide-container img {
+    transition: transform 0.3s;
+}
+
+.slide-container img:hover {
+    transform: scale(1.2);
+}
+
+
+#btnVoltarAoTopo {
+    display: none; /* Esconder o botão inicialmente */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#btnVoltarAoTopo i {
+    font-size: 20px;
+}
+
+
+.popup-container {
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    max-width: 300px;
+    display: none;
+}
+
+.popup-container::after {
+    content: '';
+    position: absolute;
+    top: -20px; /* Ajuste a posição vertical do triângulo conforme necessário */
+    left: 20%;
+    margin-left: -10px; /* Metade da largura do triângulo */
+    border-width: 10px; /* Tamanho do triângulo */
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+.popup-container p {
+    font-family: 'Poppins', sans-serif;
+    
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Altura da linha */
+    margin-bottom: 10px; /* Espaçamento inferior entre parágrafos */
+}
+
+.popup-container a {
+    color: #007bff; /* Cor do link */
+    text-decoration: underline; /* Sublinhado do link */
+    transition: color 0.3s; /* Transição suave da cor do link */
+}
+
+.popup-container a:hover {
+    color: #0056b3; /* Cor do link ao passar o mouse */
+}
+
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #20107af1;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    position: relative; /* Corrigido para 'fixed' */
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+}
+
+.zorya {
+    background-color: black;
+}
