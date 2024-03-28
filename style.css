@@ -14,6 +14,7 @@ body {
 header {
     position: relative;
     background-color: #20107af1;
+    max-width: 100%;
     color: #fff;
     padding: 20px;
     text-align: left;
