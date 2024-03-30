@@ -1,4 +1,3 @@
-/* Estilo para o corpo do documento */
 body {
     overflow-x: hidden;
     font-family: Arial, sans-serif;
@@ -11,7 +10,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Estilo para o cabeçalho */
 header {
     position: relative;
     background-color: #20107af1;
@@ -57,7 +55,6 @@ header img {
     font-weight: bold;
 }
 
-/* Estilo para as seções */
 section {
     width: 94%;
     opacity: 0.8;
@@ -68,9 +65,8 @@ section {
     z-index: 1;
 }
 
-/* TODAS AS DIVS DAS AREAS DE EMPRESAS */
 .carrossel {
-    max-width: 94%; /* Ajuste conforme necessário */
+    max-width: 94%; 
     margin: 0 auto;
     position: relative;
 }
@@ -78,8 +74,6 @@ section {
 .carrossel img {
     object-fit: contain;
     width: 12%;
-    /* Define o tamanho máximomax-width: min-content;  
-    max-height: min-content;*/
     height: auto;
     margin: 2%;
 }
@@ -90,7 +84,7 @@ section {
 }
 
 .default {
-    max-width: 94%; /* Ajuste conforme necessário */
+    max-width: 94%; 
     margin: 0 auto;
     position: relative;
 }
@@ -98,29 +92,24 @@ section {
 .default img {
     object-fit: contain;
     width: 12%;
-    /*max-width: 20%;  Define o tamanho máximo */
     height: auto;
     margin: 2%;
 }
 
 @media (max-width: 768px) {
-    
-    
+        
     .default img {
         object-fit: contain;
-        width: 12%;
-        /*max-width: 20%;  Define o tamanho máximo */
+        width: 20%;
         height: auto;
-        margin: 8%;
+        margin: 5%;
     } 
 
     .carrossel img {
         object-fit: contain;
-        width: 12%;
-        /* Define o tamanho máximomax-width: min-content;  
-        max-height: min-content;*/
+        width: 20%;
         height: auto;
-        margin: 8%;
+        margin: 5%;
     }
 
     #industria img{
@@ -144,13 +133,12 @@ section {
     color:#262;
 }
 
-/* SLIDES E TRANSICOES, BOTOES*/
 .slide-container {
     overflow: hidden;
 }
 
 .slides {
-    display: flex; /* Alterado para flex */
+    display: flex; 
     transition: transform 0.5s ease;
 }
 
@@ -182,27 +170,6 @@ button.next {
 .slide-container img:hover {
     transform: scale(1.2);
 }
-
-
-#btnVoltarAoTopo {
-    display: none; /* Esconder o botão inicialmente */
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-#btnVoltarAoTopo i {
-    font-size: 20px;
-}
-
 
 .popup-container {
     object-fit: contain;
@@ -245,17 +212,15 @@ button.next {
 }
 
 .popup-container a:hover {
-    color: #0056b3; /* Cor do link ao passar o mouse */
+    color: #0056b3; 
 }
 
-
-/* Estilo para o rodapé */
 footer {
     background-color: #20107af1;
     color: #fff;
     text-align: center;
     padding: 30px 0;
-    position: relative; /* Corrigido para 'fixed' */
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 20%;

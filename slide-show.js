@@ -68,24 +68,6 @@ window.onload = function() {
     adjustSlideContainerWidth('slidesSoftwareHardware');
 };
 
-// Função para fechar o popup
-function closePopup() {
-    if (currentPopup) {
-        currentPopup.style.display = "none";
-        currentPopup = null;
-    }
-}
-
-// Adicionar event listener ao documento inteiro para fechar o popup quando o usuário clicar fora dele
-document.addEventListener('click', function(event) {
-    var clickedImg = event.target.closest('img'); // Seleciona a imagem clicada
-    var popupContainer = event.target.closest('.popup-container'); // Seleciona o container do popup clicado
-    
-    if (!clickedImg && !popupContainer) {
-        closePopup(); // Fecha o popup se o clique não foi em uma imagem com popup ou dentro de um popup
-    }
-});
-
 var currentPopup = null;
 
 function showPopup(popupId, image) {
@@ -125,26 +107,6 @@ function showPopup(popupId, image) {
             popup.style.left = imageRect.left + "px";
 
         }
-
         currentPopup = popup;
     }
 }
-
-
-window.addEventListener('DOMContentLoaded', function() {
-    // Verifica se o popup está sobrepondo o footer e ajusta a altura do footer, se necessário
-    function adjustFooterHeight() {
-        var popup = document.getElementById('popup');
-        var footer = document.getElementById('footer');
-        var popupBottom = popup.getBoundingClientRect().bottom;
-        var footerTop = footer.getBoundingClientRect().top;
-        if (popupBottom > footerTop) {
-            var extraHeight = popupBottom - footerTop;
-            footer.style.height = (footer.offsetHeight + extraHeight) + 'px';
-        }
-    }
-
-    // Chama a função para ajustar a altura do footer quando a página é carregada e redimensionada
-    adjustFooterHeight();
-    window.addEventListener('resize', adjustFooterHeight);
-});
