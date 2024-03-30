@@ -68,28 +68,22 @@ window.onload = function() {
     adjustSlideContainerWidth('slidesSoftwareHardware');
 };
 
-// Função para rolar para o topo da página
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+// Função para fechar o popup
+function closePopup() {
+    if (currentPopup) {
+        currentPopup.style.display = "none";
+        currentPopup = null;
+    }
 }
 
-// Exibir o botão "Voltar ao Topo" quando o usuário rolar a página para baixo
-window.onscroll = function() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("btnVoltarAoTopo").style.display = "block";
-        console.log("Botão 'Voltar ao Topo' exibido.");
-    } else {
-        document.getElementById("btnVoltarAoTopo").style.display = "none";
-        console.log("Botão 'Voltar ao Topo' ocultado.");
+// Adicionar event listener ao documento inteiro para fechar o popup quando o usuário clicar fora dele
+document.addEventListener('click', function(event) {
+    var clickedImg = event.target.closest('img'); // Seleciona a imagem clicada
+    var popupContainer = event.target.closest('.popup-container'); // Seleciona o container do popup clicado
+    
+    if (!clickedImg && !popupContainer) {
+        closePopup(); // Fecha o popup se o clique não foi em uma imagem com popup ou dentro de um popup
     }
-};
-
-// Adicionar evento de clique ao botão "Voltar ao Topo"
-document.getElementById("btnVoltarAoTopo").addEventListener("click", function() {
-    scrollToTop();
 });
 
 var currentPopup = null;
@@ -110,29 +104,29 @@ function showPopup(popupId, image) {
         // Abrir o novo popup
         popup.style.display = "block";
 
-        // Obter as coordenadas da imagem em relação à viewport
-        var imageRect = image.getBoundingClientRect();
-        var imageTop = imageRect.top + window.pageYOffset; // Posição superior da imagem na viewport
-        var imageHeight = imageRect.height; // Altura da imagem
+        // Verificar se é um dispositivo móvel
+        if (window.innerWidth <= 768) { // Por exemplo, considerando dispositivos móveis com largura até 768 pixels
+            // Posicionar o popup abaixo da imagem
+            var imageRect = image.getBoundingClientRect();
+            var imageBottom = imageRect.bottom + window.pageYOffset; // Posição inferior da imagem na viewport
+            var popupHeight = popup.offsetHeight; // Altura do popup
+            popup.style.top = (imageBottom + 10) + "px"; // Ajuste de espaçamento
+            popup.style.left = "50%";
+            popup.style.transform = "translateX(-50%)"; // Centralizar horizontalmente
+            popup.style.width = "80%"; // Definir a largura do popup
+        } else {
+             // Obter as coordenadas da imagem em relação à viewport
+            var imageRect = image.getBoundingClientRect();
+            var imageTop = imageRect.top + window.pageYOffset; // Posição superior da imagem na viewport
+            var imageHeight = imageRect.height; // Altura da imagem
 
-        // Posicionar o popup abaixo da imagem
-        popup.style.top = (imageTop + imageHeight) + "px";
-        popup.style.left = imageRect.left + "px";
+            // Posicionar o popup abaixo da imagem
+            popup.style.top = (imageTop + imageHeight) + "px";
+            popup.style.left = imageRect.left + "px";
+
+        }
 
         currentPopup = popup;
     }
 }
 
-// Adicionar um event listener ao documento inteiro para fechar o popup quando o usuário clicar fora dele
-document.addEventListener('click', function(event) {
-    var clickedImg = event.target.closest('img[data-popup-id]');
-    var popupContainer = event.target.closest('.popup-container');
-    
-    if (!clickedImg && !popupContainer) {
-        // Se o clique não ocorreu em uma imagem com popup ou dentro de um popup, fechar o popup atual, se houver
-        if (currentPopup) {
-            currentPopup.style.display = "none";
-            currentPopup = null;
-        }
-    }
-});

@@ -48,8 +48,13 @@ def scrape_external_site(url):
             external_url = url
             external_url.replace("https://","")
             external_title = soup.title.text.strip() if soup.title else ""
-            meta_description = soup.find('meta', attrs={'name': 'description'})
-            external_description = meta_description['content'].strip() if meta_description else ""
+            
+            # Verifique se o URL é do Facebook ou do Instagram
+            if 'www.facebook.com' in external_url or 'www.instagram.com' in external_url:
+                external_description = ""
+            else:
+                meta_description = soup.find('meta', attrs={'name': 'description'})
+                external_description = meta_description['content'].strip() if meta_description else ""
             
             # Retorne as informações coletadas do site externo
             return {'url': external_url, 'title': external_title, 'description': external_description}
@@ -59,6 +64,7 @@ def scrape_external_site(url):
     except (ConnectionError, Timeout, TooManyRedirects) as e:
         print(f"Erro ao acessar o site externo: {url} - {e}")
         return None
+
 
 # URL do site que você deseja raspar
 url = 'https://www.ufsm.br/orgaos-suplementares/inovatec/startups'
@@ -120,7 +126,19 @@ if popups_div:
         # Contar o número de espaços antes da tag atual
         indent = len(tag.find_parents()) * "    "
         tag.insert_before(indent)  # Adiciona a mesma quantidade de espaços antes da nova tag
-    popups_div.append(new_content)
+        
+    # Para cada popup novo, verifique se já existe um popup com o mesmo ID
+    for new_popup in new_content.find_all("div", class_="popup-container"):
+        popup_id = new_popup.get("id")
+        existing_popup = popups_div.find("div", id=popup_id)
+        if existing_popup:
+            # Substituir o conteúdo do popup existente pelo novo popup
+            existing_popup.replace_with(new_popup)
+            print(f"Popup com ID '{popup_id}' substituído.")
+        else:
+            # Adicionar o novo popup à div de popups
+            popups_div.append(new_popup)
+            print(f"Popup com ID '{popup_id}' adicionado.")
     
     # Sobrescrever o arquivo index.html com o novo conteúdo mantendo a formatação
     with open("index.html", "w", encoding="utf-8") as file:

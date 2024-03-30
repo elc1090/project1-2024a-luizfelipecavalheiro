@@ -1,5 +1,6 @@
 /* Estilo para o corpo do documento */
 body {
+    overflow-x: hidden;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -33,17 +34,19 @@ header {
     max-width: fit-content;
     margin-top: 5%;
     margin-bottom: 0%;
-    margin-left: calc(20% + 5%);
+    margin-left: 5%;
 }
 
 .header-content h3 {
     max-width: fit-content;
-    margin-top: 0;
-    margin-left: calc(20% + 5%);
+    margin-top: 0%;
+    margin-left: 5%;
 }
 
 header img {
-    margin-left: 15%;
+    margin-top: 6%;
+    margin-left: 25%;
+    margin-right: 0;
     width: 25%;
 }
 
@@ -73,7 +76,10 @@ section {
 }
 
 .carrossel img {
-    max-width: 300px; /* Define o tamanho máximo */
+    object-fit: contain;
+    width: 12%;
+    /* Define o tamanho máximomax-width: min-content;  
+    max-height: min-content;*/
     height: auto;
     margin: 2%;
 }
@@ -90,10 +96,11 @@ section {
 }
 
 .default img {
-    max-width: 20%; /* Define o tamanho máximo */
+    object-fit: contain;
+    width: 12%;
+    /*max-width: 20%;  Define o tamanho máximo */
     height: auto;
     margin: 2%;
-    display: block;
 }
 
 .default h2 {
@@ -111,11 +118,6 @@ section {
     transition: transform 0.5s ease;
 }
 
-.slides img {
-    flex: 0 0 auto; /* Impede que as imagens sejam redimensionadas */
-    height: 100px; /* Ajuste conforme necessário */
-    margin-right: 10px; /* Espaçamento entre as imagens */
-}
 
 button.prev, button.next {
     position: absolute;
@@ -167,6 +169,8 @@ button.next {
 
 
 .popup-container {
+    object-fit: contain;
+    text-overflow: ellipsis;
     position: absolute;
     background-color: white;
     padding: 20px;
@@ -177,15 +181,17 @@ button.next {
     display: none;
 }
 
-.popup-container::after {
-    content: '';
-    position: absolute;
-    top: -20px; /* Ajuste a posição vertical do triângulo conforme necessário */
-    left: 20%;
-    margin-left: -10px; /* Metade da largura do triângulo */
-    border-width: 10px; /* Tamanho do triângulo */
-    border-style: solid;
-    border-color: transparent transparent white transparent;
+@media (min-width: 769px) {
+    .popup-container::after {
+        content: '';
+        position: absolute;
+        top: -20px; /* Ajuste a posição vertical do triângulo conforme necessário */
+        left: 20%;
+        margin-left: -10px; /* Metade da largura do triângulo */
+        border-width: 10px; /* Tamanho do triângulo */
+        border-style: solid;
+        border-color: transparent transparent white transparent;
+    }
 }
 
 .popup-container p {
@@ -197,7 +203,7 @@ button.next {
 }
 
 .popup-container a {
-    color: #007bff; /* Cor do link */
+    color: #0b509b; /* Cor do link */
     text-decoration: underline; /* Sublinhado do link */
     transition: color 0.3s; /* Transição suave da cor do link */
 }
