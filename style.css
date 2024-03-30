@@ -111,7 +111,7 @@ section {
         width: 12%;
         /*max-width: 20%;  Define o tamanho máximo */
         height: auto;
-        margin: 5%;
+        margin: 8%;
     } 
 
     .carrossel img {
@@ -120,7 +120,7 @@ section {
         /* Define o tamanho máximomax-width: min-content;  
         max-height: min-content;*/
         height: auto;
-        margin: 5%;
+        margin: 8%;
     }
 
     #industria img{
