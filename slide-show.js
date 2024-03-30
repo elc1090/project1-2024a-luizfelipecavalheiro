@@ -130,3 +130,21 @@ function showPopup(popupId, image) {
     }
 }
 
+
+window.addEventListener('DOMContentLoaded', function() {
+    // Verifica se o popup está sobrepondo o footer e ajusta a altura do footer, se necessário
+    function adjustFooterHeight() {
+        var popup = document.getElementById('popup');
+        var footer = document.getElementById('footer');
+        var popupBottom = popup.getBoundingClientRect().bottom;
+        var footerTop = footer.getBoundingClientRect().top;
+        if (popupBottom > footerTop) {
+            var extraHeight = popupBottom - footerTop;
+            footer.style.height = (footer.offsetHeight + extraHeight) + 'px';
+        }
+    }
+
+    // Chama a função para ajustar a altura do footer quando a página é carregada e redimensionada
+    adjustFooterHeight();
+    window.addEventListener('resize', adjustFooterHeight);
+});

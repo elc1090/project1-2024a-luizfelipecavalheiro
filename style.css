@@ -103,6 +103,42 @@ section {
     margin: 2%;
 }
 
+@media (max-width: 768px) {
+    
+    
+    .default img {
+        object-fit: contain;
+        width: 12%;
+        /*max-width: 20%;  Define o tamanho máximo */
+        height: auto;
+        margin: 5%;
+    } 
+
+    .carrossel img {
+        object-fit: contain;
+        width: 12%;
+        /* Define o tamanho máximomax-width: min-content;  
+        max-height: min-content;*/
+        height: auto;
+        margin: 5%;
+    }
+
+    #industria img{
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+    #tecnologias img{
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+    #terceiro img{
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+}
+
 .default h2 {
     margin: 2%;
     color:#262;
