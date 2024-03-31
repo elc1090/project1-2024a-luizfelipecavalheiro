@@ -14,14 +14,14 @@
 Acesso: Substitua este texto pela URL para acesso ao site publicado
 
 
-#### Desenvolvedor(a)
-Substitua este texto pela sua identificação: nome e curso
+#### Desenvolvedor
+Luiz Felipe Cavalheiro - Ciência da Computação
 
 
 #### Site/app escolhido
 
 ##### Link
-Substitua este texto pela URL do site/app escolhido
+
 
 ##### Descrição
 Substitua este texto por uma descrição do site/app escolhido. Inclua observações sobre seu conteúdo, aparência e código.

@@ -55,6 +55,24 @@ header img {
     font-weight: bold;
 }
 
+.incubadas {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    width: 88%;
+    opacity: 0.8;
+    padding: 1%;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.incubadas h2 {
+    margin: 1%;
+    color:#262;
+}
+
 section {
     width: 94%;
     opacity: 0.8;
