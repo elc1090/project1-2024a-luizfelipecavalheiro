@@ -75,11 +75,11 @@ que o usuário necessite usar a scrollbar para encontrar as logos. A ordem de am
 
 - Versão Mobile:
 
-<img src="images/mobile/header.png" alt="Visão inicial Mobile" width="80%"  height="auto"/>
+<img src="images/mobile/header.png" alt="Visão inicial Mobile" width="50%"  height="auto"/>
 
-<img src="images/mobile/carrossel.png" alt="Popup QP Mudas pós utilização do carrossel" width="80%"  height="auto"/>
+<img src="images/mobile/carrossel.png" alt="Popup QP Mudas pós utilização do carrossel" width="50%"  height="auto"/>
 
-<img src="images/mobile/popup.png" alt="Popup da Fox" width="80%"  height="auto"/>
+<img src="images/mobile/popup.png" alt="Popup da Fox" width="50%"  height="auto"/>
 
 #### Referências e créditos
 
