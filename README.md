@@ -68,7 +68,7 @@ que o usuário necessite usar a scrollbar para encontrar as logos. A ordem de am
 
 - Versão Desktop:
 
-![](images/desktop/header.png "Visão inicial")
+<img src="images/desktop/header.png" alt="Visão inicial" width="200" height="auto"/>
 ![](images/desktop/carrossel.png "Carrossel do segmento Agtech")
 ![](images/desktop/popup1.png "Popup da Auster")
 ![](images/desktop/popup-carrossel.png "Popup Softaliza após utilização do carrossel")
