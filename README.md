@@ -19,6 +19,7 @@ https://www.ufsm.br/orgaos-suplementares/inovatec/startups
 
 O site possui um design simplista, pois não há muito contraste na página, as cores utilizadas nos heading
 são semelhantes, porém, seu código é extenso e complexo, contendo várias referências a arquivos CSS e scripts em JavaScript, além de inúmeras divs que vão moldando o design do site. A página apresenta pouca interação com o usuário e nehuma informação prévia sobre as empresas, há apenas o redirecionamento para a homepage de daquelas que possuem este recurso. As divs, contém seu estilo próprio e especificidades, o CSS é extenso, utilizando inúmeros recursos de estilização. Algumas empresas, não possuem página vinculada a sua imagem, no site original, portanto as imagens não possuem nenhuma âncora que leve a página da empresa, são elas:
+
     - Agtech:
         - SpraySolutions;
         - Modum do Brasil;
