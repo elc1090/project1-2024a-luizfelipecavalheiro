@@ -68,13 +68,10 @@ que o usuário necessite usar a scrollbar para encontrar as logos. A ordem de am
 
 - Versão Desktop:
 
-<img src="images/desktop/header.png" alt="Visão inicial" width="80%"  height="auto"/>
-
-<img src="images/desktop/carrossel.png" alt="Carrossel do segmento Agtech" width="80%"  height="auto"/>
-
-<img src="images/desktop/popup1.png" alt="Popup da Auster" width="80%"  height="auto"/>
-
-<img src="images/desktop/popup-carrossel.png" alt="Popup Softaliza após utilização do carrossel" width="80%"  height="auto"/>
+![](images/desktop/header.png "Visão inicial")
+![](images/desktop/carrossel.png "Carrossel do segmento Agtech")
+![](images/desktop/popup1.png "Popup da Auster")
+![](images/desktop/popup-carrossel.png "Popup Softaliza após utilização do carrossel")
 
 - Versão Mobile:
 
@@ -95,7 +92,7 @@ que o usuário necessite usar a scrollbar para encontrar as logos. A ordem de am
     > me de um código html simples
 - **(ChatGPT)**:
     > coloque um css bonito nisso aí
-- _**(Material)**: https://pt.stackoverflow.com/questions/489627/pop-up-extens%C3%A3o-chrome-cortando-texto
+- **(Material)**: https://pt.stackoverflow.com/questions/489627/pop-up-extens%C3%A3o-chrome-cortando-texto
 - **(Material)**: https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-overflow
 - **(Material)**: https://pt.stackoverflow.com/questions/292454/resolu%C3%A7%C3%A3o-tamanho-da-imagem-em-mobile-css-aumentar-height
 - **(Material)**: https://comunidade.lojaintegrada.com.br/t/como-alterar-tamanho-da-imagem-no-mobile/57057
