@@ -68,10 +68,13 @@ que o usuário necessite usar a scrollbar para encontrar as logos. A ordem de am
 
 - Versão Desktop:
 
-![](images/desktop/header.png "Visão inicial")
-![](images/desktop/carrossel.png "Carrossel do segmento Agtech")
-![](images/desktop/popup1.png "Popup da Auster")
-![](images/desktop/popup-carrossel.png "Popup Softaliza após utilização do carrossel")
+<img src="images/desktop/header.png" alt="Visão inicial" width="80%"  height="auto"/>
+
+<img src="images/desktop/carrossel.png" alt="Carrossel do segmento Agtech" width="80%"  height="auto"/>
+
+<img src="images/desktop/popup1.png" alt="Popup da Auster" width="80%"  height="auto"/>
+
+<img src="images/desktop/popup-carrossel.png" alt="Popup Softaliza após utilização do carrossel" width="80%"  height="auto"/>
 
 - Versão Mobile:
 
@@ -83,22 +86,23 @@ que o usuário necessite usar a scrollbar para encontrar as logos. A ordem de am
 
 #### Referências e créditos
 
-Substitua este trecho por uma lista bem detalhada de todo material que você consultou para ajudar no projeto, por exemplo:  URL de templates usados, URL de icon kits usados, créditos para colegas que colaboraram, geradores de código (incluindo alguns prompts usados para o ChatGPT, se for o caso)
-- (Template): https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap
-- (Template): https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
-- (Icon): https://www.ufsm.br/app/themes/ufsm/images/icons/favicon.ico
-- (ChatGPT): 
-    > "crie um web scrapper para mim pegar informaçoes de sites" 
-    > "me de um código html simples"
-    > "coloque um css bonito nisso aí"
-- (Material): https://pt.stackoverflow.com/questions/489627/pop-up-extens%C3%A3o-chrome-cortando-texto
-- (Material): https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-overflow
-- (Material): https://pt.stackoverflow.com/questions/292454/resolu%C3%A7%C3%A3o-tamanho-da-imagem-em-mobile-css-aumentar-height
-- (Material): https://comunidade.lojaintegrada.com.br/t/como-alterar-tamanho-da-imagem-no-mobile/57057
-- (Material): https://www.alura.com.br/artigos/centralizando-elementos-com-css?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=20946398532&hsa_grp=153091871930&hsa_ad=688089973825&hsa_src=g&hsa_tgt=dsa-2258482179723&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjw8J6wBhDXARIsAPo7QA854fmiU8iizPSVqZcHbnXH5mYZs3OsgR26xFkce-jVZ82oH--1NaUaAom3EALw_wcB
-- (Material): https://pt.stackoverflow.com/questions/32936/reduzir-o-tamanho-de-uma-imagem-e-manter-a-propor%C3%A7%C3%A3o-com-css
-- (Material): https://cursos.alura.com.br/forum/topico-pagina-nao-fica-100-da-pagina-barra-de-scroll-274515
+- **(Template)**: https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap
+- **(Template)**: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
+- **(Icon)**: https://www.ufsm.br/app/themes/ufsm/images/icons/favicon.ico
+- **(ChatGPT)**: 
+    > crie um web scrapper para mim pegar informaçoes de sites 
+- **(ChatGPT)**:
+    > me de um código html simples
+- **(ChatGPT)**:
+    > coloque um css bonito nisso aí
+- _**(Material)**: https://pt.stackoverflow.com/questions/489627/pop-up-extens%C3%A3o-chrome-cortando-texto
+- **(Material)**: https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-overflow
+- **(Material)**: https://pt.stackoverflow.com/questions/292454/resolu%C3%A7%C3%A3o-tamanho-da-imagem-em-mobile-css-aumentar-height
+- **(Material)**: https://comunidade.lojaintegrada.com.br/t/como-alterar-tamanho-da-imagem-no-mobile/57057
+- **(Material)**: https://www.alura.com.br/artigos/centralizando-elementos-com-css?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=20946398532&hsa_grp=153091871930&hsa_ad=688089973825&hsa_src=g&hsa_tgt=dsa-2258482179723&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjw8J6wBhDXARIsAPo7QA854fmiU8iizPSVqZcHbnXH5mYZs3OsgR26xFkce-jVZ82oH--1NaUaAom3EALw_wcB
+- **(Material)**: https://pt.stackoverflow.com/questions/32936/reduzir-o-tamanho-de-uma-imagem-e-manter-a-propor%C3%A7%C3%A3o-com-css
+- **(Material)**: https://cursos.alura.com.br/forum/topico-pagina-nao-fica-100-da-pagina-barra-de-scroll-274515
 
 
 ---
-Projeto entregue para a disciplina de [Desenvolvimento de Software para a Web](http://github.com/andreainfufsm/elc1090-2024a) em 2024a
+Projeto entregue para a disciplina de [Desenvolvimento de Software para a Web]**(http://github.com/andreainfufsm/elc1090-2024a) em 2024a
