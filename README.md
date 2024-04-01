@@ -1,17 +1,9 @@
 # Projeto: Remake de site/app web
 
-> 1. Baixe este arquivo e edite o texto em formato Markdown conforme as instruções a seguir.
-> 2. Substitua todos os trechos de texto iniciados com "Substitua" por informações do seu projeto, conforme solicitado em cada trecho.
-> 3. Substitua a imagem por um screenshot do projeto (arquivo pode ser armazenado no repositório ou em URL externa). GIFs animados também são permitidos!
-> 4. Remova todas as instruções de entrega.
-> 5. Double-check: Certifique-se de que seu README.md não contenha instruções de entrega!
-> 6. Entregue este README.md dentro da pasta raiz do seu repositório de entrega. Peça ajuda se não souber como editar ou entregar!
-> Opcional: você pode alterar a formatação do README, mas mantenha todas as informações solicitadas
-
-![Substitua a imagem ao lado por um screenshot do seu projeto](https://mdswanson.com/static/chops-ux-step-4.png "Screenshot do projeto")
+![Primeiro contato visual com o site](images/desktop/header.png "Screenshot do projeto")
 
 
-Acesso: Substitua este texto pela URL para acesso ao site publicado
+Acesso: https://elc1090.github.io/project1-2024a-luizfelipecavalheiro/
 
 
 #### Desenvolvedor
@@ -21,34 +13,60 @@ Luiz Felipe Cavalheiro - Ciência da Computação
 #### Site/app escolhido
 
 ##### Link
-
+https://www.ufsm.br/orgaos-suplementares/inovatec/startups
 
 ##### Descrição
-Substitua este texto por uma descrição do site/app escolhido. Inclua observações sobre seu conteúdo, aparência e código.
+
+O site possui um design simplista, pois não há muito contraste na página, as cores utilizadas nos heading
+são semelhantes, porém, seu código é extenso e complexo, contendo várias referências a arquivos CSS e scripts em JavaScript, além de inúmeras divs que vão moldando o design do site. A página apresenta pouca interação com o usuário e nehuma informação prévia sobre as empresas, há apenas o redirecionamento para a homepage de daquelas que possuem este recurso. As divs, contém seu estilo próprio e especificidades, o CSS é extenso, utilizando inúmeros recursos de estilização. Algumas empresas, não possuem página vinculada a sua imagem, no site original, portanto as imagens não possuem nenhuma âncora que leve a página da empresa, são elas:
+    - Agtech:
+        - SpraySolutions;
+        - Modum do Brasil;
+        - Farm360;
+        - Performance Vegetal;
+        - Bion;
+
+    - Software/Hardware:
+        - Permut+;
+        - Chartei;
+        - Biodos;
+        - Engesa;
+    
+    - FoodTech:
+        - Olive;
+    
+    - Edutech:
+        - Kreska;
+        - Colina;
+        - e-tics;
+    
+    - Saas:
+        - Motorhub;
 
 #### Desenvolvimento
 
-Substitua este texto por uma descrição do processo de desenvolvimento, explicando suas escolhas para o remake e etapas do trabalho (por exemplo, como foi coletado o conteúdo, qual foi seu foco no remake, etc.)
-
+A ideia do remake foi criar carrosseis nos segmentos que possuem mais empresas incubadas, evitando assim
+que o usuário necessite usar a scrollbar para encontrar as logos. A ordem de amostragem dos segmentos, foram selecionados de forma decrescente em relação a quantidade de empresas, evitando a sensação de sobrecarga do usuário por ainda haver muitas empresas para conhecer, conforme vai descendo na scrollbar. Além disso, foram visitadas as páginas das empresas através de um scrapper feito em Python e os dados foram armazenados e posteriormente transformados em divs no arquivo HTML pelo próprio scrapper, essas divs representam popups que, após o clique na logo, são abertos e apresentam informações sobre a respectiva empresa, oferecendo um ganho de tempo ao usuário que não necessita visitar a página da empresa para descobrir mais sobre ela. A abertura, posicionamento e fechamento dos popups são controlados por um código em JavaScript. Além disso, ao clicar na imagem utilizando dispositivo mobile ou apenas passando o cursor por cima da logo na versão desktop, as imagens são ampliadas, ganhando um destaque maior. O design da página, por sua vez, caracteriza-se como clean, dando maior destaque às empresas, pensando na grande diversidade de logos que apresentam cores diversas e que, caso o site apresentasse um design mais colorido, iriam concorrer e tirar a atenção das logos.
 
 #### Tecnologias
 
-Substitua este trecho por uma lista detalhada de tecnologias usadas (tanto as básicas, como HTML e CSS, como as mais específicas, por exemplo Tailwind, etc.):
-- ...
-- ...
-- 
+- HTML
+- CSS
+- JavaScript
+- Python
 
 #### Ambiente de desenvolvimento
 
-Substitua este trecho por uma lista detalhada dos ambientes/ferramentas de desenvolvimento que você usou (por exemplo, VS Code + alguma extensão, etc.)
-- ...
-- ...
+- VSCode
+- Google Chrome
+- Inspecionar (F12)
 
 #### Referências e créditos
 
 Substitua este trecho por uma lista bem detalhada de todo material que você consultou para ajudar no projeto, por exemplo:  URL de templates usados, URL de icon kits usados, créditos para colegas que colaboraram, geradores de código (incluindo alguns prompts usados para o ChatGPT, se for o caso)
-- ...
-- ...
+- (Template): https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap
+- (Template): https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
+- (Icon): https://www.ufsm.br/app/themes/ufsm/images/icons/favicon.ico
 
 
 
