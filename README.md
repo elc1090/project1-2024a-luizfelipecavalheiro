@@ -68,17 +68,18 @@ que o usuário necessite usar a scrollbar para encontrar as logos. A ordem de am
 
 - Versão Desktop:
 
-<img src="images/desktop/header.png" alt="Visão inicial" width="10%" height="auto"/>
-
+![](images/desktop/header.png "Visão inicial")
 ![](images/desktop/carrossel.png "Carrossel do segmento Agtech")
 ![](images/desktop/popup1.png "Popup da Auster")
 ![](images/desktop/popup-carrossel.png "Popup Softaliza após utilização do carrossel")
 
 - Versão Mobile:
 
-![](images/mobile/header.png "Visão inicial Mobile")
-![](images/mobile/carrossel.png "Popup QP Mudas pós utilização do carrossel")
-![](images/mobile/popup.png "Popup da Fox")
+<img src="images/mobile/header.png" alt="Visão inicial Mobile" width="80%"  height="auto"/>
+
+<img src="images/mobile/carrossel.png" alt="Popup QP Mudas pós utilização do carrossel" width="80%"  height="auto"/>
+
+<img src="images/mobile/popup.png" alt="Popup da Fox" width="80%"  height="auto"/>
 
 #### Referências e créditos
 
