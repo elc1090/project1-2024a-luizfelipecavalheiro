@@ -50,6 +50,8 @@ são semelhantes, porém, seu código é extenso e complexo, contendo várias re
 A ideia do remake foi criar carrosseis nos segmentos que possuem mais empresas incubadas, evitando assim
 que o usuário necessite usar a scrollbar para encontrar as logos. A ordem de amostragem dos segmentos, foram selecionados de forma decrescente em relação a quantidade de empresas, evitando a sensação de sobrecarga do usuário por ainda haver muitas empresas para conhecer, conforme vai descendo na scrollbar. Além disso, foram visitadas as páginas das empresas através de um scrapper feito em Python e os dados foram armazenados e posteriormente transformados em divs no arquivo HTML pelo próprio scrapper, essas divs representam popups que, após o clique na logo, são abertos e apresentam informações sobre a respectiva empresa, oferecendo um ganho de tempo ao usuário que não necessita visitar a página da empresa para descobrir mais sobre ela. A abertura, posicionamento e fechamento dos popups são controlados por um código em JavaScript. Além disso, ao clicar na imagem utilizando dispositivo mobile ou apenas passando o cursor por cima da logo na versão desktop, as imagens são ampliadas, ganhando um destaque maior. O design da página, por sua vez, caracteriza-se como clean, dando maior destaque às empresas, pensando na grande diversidade de logos que apresentam cores diversas e que, caso o site apresentasse um design mais colorido, iriam concorrer e tirar a atenção das logos.
 
+#### Link do remake: https://elc1090.github.io/project1-2024a-luizfelipecavalheiro
+
 #### Tecnologias
 
 - HTML
